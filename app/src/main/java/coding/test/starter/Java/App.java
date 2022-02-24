@@ -3,12 +3,9 @@
  */
 package coding.test.starter.Java;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class App {
-    public Map<String, Integer> getNotes() {
-        return new HashMap<>();
+    public void getNotes() {
+        return;
     }
 
     public static void main(String[] args) {
