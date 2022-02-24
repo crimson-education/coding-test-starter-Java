@@ -6,14 +6,26 @@
  * User Manual available at https://docs.gradle.org/7.4/userguide/building_java_projects.html
  */
 
+
+
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
+    id 'java'
+    id 'maven-publish'
 }
+
+sourceCompatibility = 1.8 // java 8
+targetCompatibility = 1.8
 
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
+}
+
+java {
+    withSourcesJar()
+    withJavadocJar()
 }
 
 dependencies {
